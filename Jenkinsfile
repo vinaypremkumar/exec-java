@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Checkout') {
             steps {
-                git branch: 'master',  url: 'git@github.com:vinaypremkumar/exec-java.git'
+                git branch: 'master',  url: 'https://github.com/vinaypremkumar/exec-java.git'
             }
         } 
     }
