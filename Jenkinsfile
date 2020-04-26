@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone sources') {
             steps {
-                git url: 'git@github.com:vinaypremkumar/exec-java.git'
+                git url: 'https://github.com/vinaypremkumar/exec-java.git'
             }
         }
         stage('Checkout') {
