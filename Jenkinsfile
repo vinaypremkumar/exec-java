@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Maven Build') {
             steps {
-                sh 'mvn package'
+                sh '/opt/maven/bin/mvn package'
                 sh 'java -jar target/zilla-0.1-jar-with-dependencies.jar'
             }
         }    
