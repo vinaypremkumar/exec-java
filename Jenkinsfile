@@ -10,7 +10,13 @@ pipeline {
             steps {
                 git branch: 'master',  url: 'https://github.com/vinaypremkumar/exec-java.git'
             }
-        } 
+        }
+        stage('Maven Build') {
+            steps {
+                sh 'mvn package'
+                sh 'java -jar target/zilla-0.1-jar-with-dependencies.jar'
+            }
+        }    
     }
 }
     
