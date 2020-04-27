@@ -8,7 +8,6 @@ This is just a sample project with a `pom.xml` file that will:
 
 It's just here to give me a faster heads up rather than relying on the maven archetype.
 
-
 Build commands
 --------------
 
